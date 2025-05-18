@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Hızlı Çerez Temizleyici",
+  "version": "1.0",
+  "description": "İstediğiniz tuş kombinasyonu ile çerezleri temizleyin",
+  "permissions": [
+    "cookies",
+    "storage",
+    "browsingData",
+    "commands"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "commands": {
+    "clear-cookies": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
+      },
+      "description": "Çerezleri Temizle"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+} 
