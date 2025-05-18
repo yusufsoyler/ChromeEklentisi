@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Controller Y.S",
+  "version": "1.0",
+  "description": "YouTube videolarını fare ile ileri/geri sarmanızı sağlar",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
